@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="rating-state">
+    <img class="rating-state--star-icon" src="./images/icon-star.svg" alt="star icon">
+    <h1 class="rating-state--heading">How did we do?</h1>
+    <p class="rating-state--message">
+      Please let us know how we did with your support request. 
+      All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rating-state--options">
+      <input type="radio" class="rating-state--options-input" name="rating" id="option-1" value="1">
+      <label class="rating-state--options-label" for="option-1">1</label>
+      
+      <input type="radio" class="rating-state--options-input" name="rating" id="option-2" value="2">
+      <label class="rating-state--options-label" for="option-2">2</label>
+
+      <input type="radio" class="rating-state--options-input" name="rating" id="option-3" value="3">
+      <label class="rating-state--options-label" for="option-3">3</label>
+
+      <input type="radio" class="rating-state--options-input" name="rating" id="option-4" value="4">
+      <label class="rating-state--options-label" for="option-4">4</label>
+
+      <input type="radio" class="rating-state--options-input" name="rating" id="option-5" value="5">
+      <label class="rating-state--options-label" for="option-5">5</label>    
+    </div>
+    <button id="rating-state--submit">Submit</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="thank-you-state hidden">
+    <img class="thank-you-state--illustration" src="./images/illustration-thank-you.svg" alt="illustration of phone and credit card">
+    <p id="thank-you-state--selected">You selected <span id="selected--value"></span> out of 5</p>
+    <h1 class="thank-you-state--heading">Thank you!</h1>
+    <p class="thank-you-state--message">
+      We appreciate you taking the time to give a rating. If you ever 
+      need more support, don't hesitate to get in touch!
+    </p>
+  </div> 
+
+  <!-- Thank you state end -->
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --darker-blue: hsl(215, 21%, 11%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-state, .thank-you-state {
+    padding: 1.5em;
+    width: 90vw;
+    background: radial-gradient(at top, var(--dark-blue) 20%, var(--darker-blue));
+    background-position: top;
+    border-radius: 15px;
+}
+
+.rating-state--star-icon {
+    background-color: var(--dark-blue);
+    padding: .7em;
+    border-radius: 100%;
+}
+
+.rating-state--heading, .thank-you-state--heading {
+    color: var(--white);
+    font-size: 25px;
+    margin: .5em 0;
+}
+
+.rating-state--message, .thank-you-state--message {
+    font-size: 14px;
+    color: var(--light-grey);
+}
+
+.rating-state--options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em auto;
+}
+
+.rating-state--options-label {
+    color: var(--light-grey);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--dark-blue);
+    padding: .7em 1.15em;
+    padding-top: .8em;
+    border-radius: 100%;
+}
+
+.rating-state--options-input {
+    display: none;
+}
+
+.rating-state--options-input:checked+label {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+#rating-state--submit {
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .2em;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.thank-you-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#thank-you-state--selected {
+    background-color: var(--dark-blue);
+    padding: .6em .8em;
+    color: var(--orange);
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+}
+
+.thank-you-state--heading {
+    margin: 0;
+}
+
+.thank-you-state--illustration {
+    margin-top: .8em;
+    margin-bottom: .6em;
+    width: 140px;
+}
+
+.thank-you-state--message {
+    margin-top: .5em;
+    line-height: 1.5em;
+}
+
+.hidden {
+    display: none;
+}

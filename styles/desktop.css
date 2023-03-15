@@ -1,0 +1,61 @@
+@media screen and (min-width: 376px) {
+    .rating-state, .thank-you-state {
+        border-radius: 30px;
+        width: 30vw;
+        padding: 2.1em;
+    }
+
+    .rating-state--star-icon {
+        padding: 1em;
+    }
+
+    .rating-state--message {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .rating-state--options {
+        margin-bottom: 2em;
+    }
+
+    .rating-state--options-label {
+        font-size: 17px;
+        padding: .9em 1.3em;
+    }
+
+    .rating-state--options-label:hover {
+        background-color: var(--orange);
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    #rating-state--submit {
+        font-size: 16px;
+        padding: .9em 0;
+        margin-bottom: 0;
+    }
+
+    #rating-state--submit:hover {
+        background-color: var(--white);
+        color: var(--orange);
+        cursor: pointer;
+    }
+
+    #thank-you-state--selected {
+        padding: .45em 1.1em;
+        margin-bottom: 2em;
+    }
+
+    .thank-you-state--illustration {
+        margin-top: 1em;
+        width: 180px;
+    }
+
+    .thank-you-state--heading, .rating-state--heading {
+        font-size: 29px;
+    }
+
+    .thank-you-state--message {
+        font-size: 16px;
+    }
+}
